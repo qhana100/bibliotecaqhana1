@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Iniciar sesión | Biblioteca Lector Feliz</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <div class="login-pantalla">
+
+        <header class="login-top">
+            <span class="marca">Lector Feliz</span>
+        </header>
+
+        <main class="login-wrap">
+
+            <!-- FORMULARIO A LA IZQUIERDA -->
+            <section class="login-card">
+
+                <form id="formLogin" novalidate>
+                    <h1>Iniciar sesión</h1>
+
+                    <p class="pista">
+                        Accede al panel de la biblioteca.
+                    </p>
+
+                    <p class="pista">
+                        Usuario: bibliotecario · Contraseña: libro2026
+                    </p>
+
+                    <label for="usuario">
+                        Usuario o correo electrónico
+                    </label>
+
+                    <input
+                        id="usuario"
+                        type="text"
+                        autocomplete="username"
+                    >
+
+                    <span class="error" id="errUsuario"></span>
+
+                    <label for="clave">Contraseña</label>
+
+                    <input
+                        id="clave"
+                        type="password"
+                        autocomplete="current-password"
+                    >
+
+                    <span class="error" id="errClave"></span>
+                    <span class="error" id="errGeneral"></span>
+
+                    <button type="submit">Ingresar</button>
+                </form>
+
+            </section>
+
+            <!-- TITULO GRANDE A LA DERECHA -->
+            <section class="login-hero">
+
+                <h2>Un libro abre todo un mundo</h2>
+
+                <p>
+                    Catálogo, préstamos y devoluciones
+                    en un solo lugar.
+                </p>
+
+            </section>
+
+        </main>
+
+        <footer>
+            © 2026 Biblioteca Lector Feliz 
+        </footer>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+

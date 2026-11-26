@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Préstamos | Lector Feliz</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body data-pagina="prestamos" data-protegida>
+  <header class="barra"><span class="marca">Lector Feliz</span><nav><a href="inicio.html">Inicio</a><a href="catalogo.html">Catálogo</a><a href="prestamos.html" class="activo">Préstamos</a></nav><button id="salir" class="btn-salir">Salir</button></header>
+  <section class="vista-contenido">
+  <section class="hero">
+ <span class="circulo c1"></span><span class="circulo c2"></span>
+ <h1>Préstamos</h1>
+ <p>Registra los préstamos y las devoluciones de los libros.</p>
+ </section>
+ <div class="contenedor">
+ <main>
+ <section>
+ <h2>Registrar préstamo</h2>
+ <form id="formPrestamo" novalidate class="rejilla">
+ <div class="ancho"><label for="libro">Libro disponible</label><select id="libro"></select><span class="error" id="errLibro"></span></div>
+ <div><label for="lector">Nombre del lector</label><input id="lector" type="text" placeholder="Ej. Carla Rojas"><span class="error" id="errLector"></span></div>
+ <div><label for="carnet">Número de carnet</label><input id="carnet" type="text" placeholder="Ej. 7158143"><span class="error" id="errCarnet"></span></div>
+ <div class="ancho"><label for="devolucion">Fecha de devolución</label><input id="devolucion" type="date"><span class="error" id="errDevolucion"></span></div>
+ <button type="submit" class="ancho">Registrar préstamo</button>
+ </form>
+ </section>
+ <section>
+ <h2>Préstamos activos</h2>
+ 
+ <div class="tabla-wrap"><table><thead id="cab-prestamos"></thead><tbody id="tabla-prestamos"></tbody></table></div>
+ </section>
+ </main>
+ <aside><article><h2>Recuerda</h2><p>Devuelve los libros a tiempo para que otros lectores también puedan usarlos.</p></article></aside>
+ </div>
+  </section>
+  <footer>© 2026 Biblioteca Lector Feliz</footer>
+  <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo | Lector Feliz</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body data-pagina="catalogo" data-protegida>
+  <header class="barra"><span class="marca">Lector Feliz</span><nav><a href="inicio.html">Inicio</a><a href="catalogo.html" class="activo">Catálogo</a><a href="prestamos.html">Préstamos</a></nav><button id="salir" class="btn-salir">Salir</button></header>
+  <section class="vista-contenido">
+  <section class="hero">
+ <span class="circulo c1"></span><span class="circulo c2"></span>
+ <h1>Catálogo</h1>
+ <p>Registra los libros y consulta cuáles están disponibles.</p>
+ </section>
+ <div class="contenedor">
+ <main>
+ <section>
+ <h2>Registrar libro</h2>
+ <form id="formLibro" novalidate class="rejilla">
+ <div><label for="titulo">Título</label><input id="titulo" type="text" placeholder="Ej. Rayuela"><span class="error" id="errTitulo"></span></div>
+ <div><label for="autor">Autor</label><input id="autor" type="text" placeholder="Ej. Julio Cortázar"><span class="error" id="errAutor"></span></div>
+ <div><label for="genero">Género</label><select id="genero"><option value="">Selecciona...</option><option>Novela</option><option>Clásico</option><option>Ciencia</option><option>Historia</option><option>Infantil</option><option>Otro</option></select><span class="error" id="errGenero"></span></div>
+ <div><label for="anio">Año de publicación</label><input id="anio" type="number" min="1450" max="2026" placeholder="Ej. 1967"><span class="error" id="errAnio"></span></div>
+ <button type="submit" class="ancho">Guardar libro</button>
+ </form>
+ </section>
+ <section>
+ <h2>Libros registrados</h2>
+ <input id="buscar-catalogo" type="search" placeholder="Buscar por título o autor">
+ <div class="tabla-wrap"><table><thead id="cab-catalogo"></thead><tbody id="tabla-catalogo"></tbody></table></div>
+ </section>
+ </main>
+ <aside><article><h2>Consejo</h2><p>Revisa el año y el autor antes de guardar para que el lector encuentre el libro sin confusiones.</p></article></aside>
+ </div>
+  </section>
+  <footer>© 2026 Biblioteca Lector Feliz</footer>
+  <script src="../js/script.js"></script>
+</body>
+</html>
